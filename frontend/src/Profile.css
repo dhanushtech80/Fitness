@@ -1,0 +1,184 @@
+/* Profile.css - FIT-Track Profile Page Styling */
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-header-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-avatar-large {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-blue), #000080);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 800;
+  color: #FFFFFF;
+  box-shadow: 0 0 25px rgba(255, 23, 68, 0.4);
+  border: 2px solid var(--accent-blue);
+}
+
+.profile-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-header-name {
+  font-size: 26px;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+
+.profile-header-email {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.profile-header-badge {
+  display: inline-block;
+  margin-top: 6px;
+  background: rgba(255, 23, 68, 0.15);
+  border: 1px solid var(--accent-blue);
+  color: var(--accent-blue);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+
+/* PERSONAL INFORMATION SECTION */
+.info-section-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.info-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-section-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-item {
+  background-color: var(--card-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.info-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.info-input {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-subtle);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.info-input:focus {
+  border-color: var(--accent-blue);
+}
+
+.edit-btn {
+  background: var(--card-secondary);
+  border: 1px solid var(--border-subtle);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-btn:hover {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.save-btn {
+  background: var(--accent-blue);
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 4px 14px rgba(255, 23, 68, 0.4);
+}
+
+.save-btn:hover {
+  background: #D50000;
+}
+
+@media (max-width: 640px) {
+  .profile-header-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-header-badge {
+    margin: 6px auto 0 auto;
+  }
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}

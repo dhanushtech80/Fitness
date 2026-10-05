@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Oswald:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary":"#c8c6c5","surface-tint":"#ffb4a8","on-tertiary":"#68000a","surface-container-highest":"#33343c","outline-variant":"#5e3f3a","primary":"#ffb4a8","tertiary-container":"#d32f33","tertiary-fixed":"#ffdad7","secondary-fixed":"#e5e2e1","surface-container-high":"#292931","on-primary":"#680200","on-tertiary-container":"#fff2f0","inverse-on-surface":"#2f3038","surface-container":"#1e1f26","tertiary-fixed-dim":"#ffb3ad","surface-container-low":"#1a1b22","inverse-primary":"#c00500","primary-container":"#e10600","on-surface-variant":"#e9bcb5","on-primary-fixed-variant":"#930300","surface-bright":"#383941","on-primary-container":"#fff2f0","on-background":"#e3e1ec","surface-variant":"#33343c","on-error":"#690005","on-secondary-fixed":"#1c1b1b","secondary-container":"#474746","on-primary-fixed":"#410100","on-tertiary-fixed":"#410004","inverse-surface":"#e3e1ec","surface-dim":"#12131a","surface-container-lowest":"#0d0e15","primary-fixed":"#ffdad4","outline":"#af8781","on-tertiary-fixed-variant":"#930013","on-secondary-container":"#b7b4b4","surface":"#12131a","tertiary":"#ffb3ad","primary-fixed-dim":"#ffb4a8","on-secondary-fixed-variant":"#474746","on-secondary":"#313030","on-surface":"#e3e1ec","on-error-container":"#ffdad6","background":"#12131a","error-container":"#93000a","error":"#ffb4ab","secondary-fixed-dim":"#c8c6c5"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"1rem","margin-tablet":"1.5rem","gutter-desktop":"1.5rem","space-md":"1rem","space-lg":"1.5rem","space-xl":"2.5rem","gutter":"1rem"},"fontFamily":{"headline-sm":["Oswald"],"metric-md":["Oswald"],"display-hero-mobile":["Oswald"],"body-lg":["Inter"],"label-caps":["Oswald"],"headline-lg-mobile":["Oswald"],"metric-xl":["Oswald"],"body-md":["Inter"],"body-sm":["Inter"],"headline-lg":["Oswald"],"headline-md":["Oswald"],"label-mono":["Inter"],"display-hero":["Oswald"]},"fontSize":{"headline-sm":["18px",{"lineHeight":"22px","letterSpacing":"0.02em","fontWeight":"600"}],"metric-md":["32px",{"lineHeight":"34px","letterSpacing":"0em","fontWeight":"700"}],"display-hero-mobile":["44px",{"lineHeight":"48px","letterSpacing":"0.03em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"500"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"32px","letterSpacing":"0.02em","fontWeight":"700"}],"metric-xl":["56px",{"lineHeight":"56px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-lg":["36px",{"lineHeight":"40px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"28px","letterSpacing":"0.01em","fontWeight":"600"}],"label-mono":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"display-hero":["64px",{"lineHeight":"68px","letterSpacing":"0.04em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface-container-lowest font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="px-space-lg py-space-lg flex items-center gap-space-sm"><img alt="FitTrack AI Crimson Power Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfwYKxQchr5Pb7NYa5bu_II0dJRKmzipktAeMDAErlEirf37wtbr8tyaUtMsi_9iHv-T2dtMTMV1owC5OXGA_Bwpz4zmJtiSxoU50UK8UEnOiHVrxS9ZIBSFkrBznE23nHPOX_Rpu5dMeS13MmOP-WOYMqvss6d489K6khWVO5yyYEGCbAqLH__9XcZgGAgLs7b5h4KXioT3pBgdb_TzqzxavfKXlU5OqkkjUwNw1Dr_90wnB8yJMY"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase text-on-surface tracking-wider">FitTrack AI</span><span class="font-label-mono text-label-mono uppercase text-outline">Better Health. Smarter Tracking.</span></div></div><div class="px-space-md py-space-xs"><span class="px-space-sm font-label-caps text-label-caps uppercase text-secondary">Telemetry &amp; Logs</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm text-headline-sm"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded transition-colors bg-primary-container text-on-primary-container font-headline-sm text-headline-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-inherit">dashboard</span><span class="font-headline-sm text-headline-sm uppercase">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="activity" href="#"><span class="material-symbols-outlined text-inherit">directions_run</span><span class="font-headline-sm text-headline-sm uppercase">Activity</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="nutrition" href="#"><span class="material-symbols-outlined text-inherit">restaurant</span><span class="font-headline-sm text-headline-sm uppercase">Nutrition</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="workouts" href="#"><span class="material-symbols-outlined text-inherit">fitness_center</span><span class="font-headline-sm text-headline-sm uppercase">Workouts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="weight" href="#"><span class="material-symbols-outlined text-inherit">monitor_weight</span><span class="font-headline-sm text-headline-sm uppercase">Weight</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="water" href="#"><span class="material-symbols-outlined text-inherit">water_drop</span><span class="font-headline-sm text-headline-sm uppercase">Water</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="goals" href="#"><span class="material-symbols-outlined text-inherit">flag</span><span class="font-headline-sm text-headline-sm uppercase">Goals</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="#"><span class="material-symbols-outlined text-inherit">insights</span><span class="font-headline-sm text-headline-sm uppercase">Analytics</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-inherit">person</span><span class="font-headline-sm text-headline-sm uppercase">Profile</span></a></nav></div><div class="p-space-md"><div class="bg-surface-container p-space-md rounded flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-caps text-label-caps uppercase text-on-surface">System Ready</span></div><span class="font-label-mono text-label-mono uppercase text-secondary">V4.2</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-low/95 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg flex-1 max-w-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-secondary">search</span><input class="w-full bg-surface-container pl-10 pr-space-md py-space-xs rounded font-body-sm text-body-sm text-on-surface placeholder:text-secondary focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="Search athlete metrics, lifts, workouts..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container"><span class="material-symbols-outlined text-primary-container text-lg">local_fire_department</span><span class="font-label-caps text-label-caps uppercase text-on-surface">7-Day Streak</span></div><button class="p-space-xs rounded bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined">notifications</span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UMC-lPfmrWTeSmY5pH82qUsadvN8I3CTSXK8pJZ0Fv6W0G487pctJPlTFCzjKzYhNKEWdrtSV99PCY9hvjB0rX0DBZmtZztOEoaA2-I3-awXKAkVieJOCMQRN9pJfvYgtT3i4xSX-UtI1d_d_uXyya8ZmsJ9lKxWkECm3opD096EDHk-0LpTjP52W7p2Lvn_-rSu4FkQo0PYYf-Tyb69-fgTYob3eHO8eRDJLF_F72MW2SpJ_nTkrspN8"/><div class="hidden lg:flex flex-col text-left"><span class="font-headline-sm text-headline-sm uppercase text-on-surface leading-tight">Sarah Vance</span><span class="font-label-mono text-label-mono uppercase text-primary">Pro Athlete</span></div></div></div></div></header><main class="w-full pt-16 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-space-md lg:px-space-xl py-space-lg flex flex-col gap-space-lg">
+<!-- Hero / Welcome Command Strip -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-2.5 h-2.5 bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary-container">Live Telemetry Link Active</span>
+<span class="text-secondary font-label-mono text-label-mono">| NODE // 09-ATHLETE</span>
+</div>
+<h1 class="font-display-hero text-headline-lg lg:text-display-hero uppercase text-on-surface tracking-tight leading-none">
+          Good Morning, <span class="text-primary-container">Sarah</span>
+</h1>
+<p class="font-label-mono text-body-sm text-secondary uppercase tracking-wider mt-1">
+          Today's Strain Target: <span class="text-on-surface font-semibold">85% Recovery Peak</span> • 24 OCT • Mesocycle W3-D4
+        </p>
+</div>
+<!-- Quick Action CTAs -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="group flex items-center gap-space-xs px-space-md py-space-sm bg-primary-container hover:bg-tertiary-container text-on-primary-container font-headline-sm text-headline-sm uppercase transition-all duration-150 active:scale-95 shadow-[0_0_20px_rgba(225,6,0,0.35)]" type="button">
+<span class="material-symbols-outlined text-lg">add_box</span>
+<span>+ Log Workout</span>
+</button>
+<button class="group flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-headline-sm text-headline-sm uppercase transition-all duration-150 active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-primary">restaurant</span>
+<span>+ Log Meal</span>
+</button>
+<button class="group flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface font-headline-sm text-headline-sm uppercase transition-all duration-150 active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-secondary">monitor_weight</span>
+<span>+ Quick Weigh-In</span>
+</button>
+</div>
+</div>
+<!-- Section 1: Top Metrics Grid (4 Heavy Telemetry Cards) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Daily Steps -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="absolute -right-6 -bottom-6 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-9xl text-on-surface">footprint</span>
+</div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Daily Steps Target</span>
+<span class="material-symbols-outlined text-primary-container text-xl">directions_walk</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-on-surface leading-none">9,420</span>
+<span class="font-headline-sm text-headline-sm text-secondary uppercase">/ 12k</span>
+</div>
+<p class="font-label-mono text-label-mono text-primary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_up</span> +1,240 vs yesterday
+          </p>
+</div>
+<div class="flex flex-col gap-1.5 pt-space-xs">
+<div class="w-full bg-surface-container-highest h-2 overflow-hidden">
+<div class="bg-primary-container h-full transition-all duration-700" style="width: 78.5%;"></div>
+</div>
+<div class="flex justify-between items-center font-label-mono text-label-mono text-secondary uppercase">
+<span>Progress: 78.5%</span>
+<span>2,580 Rem</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Active Burn -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Active Exertion Burn</span>
+<span class="material-symbols-outlined text-primary-container text-xl">local_fire_department</span>
+</div>
+<div class="flex items-center justify-between my-space-xs gap-space-sm">
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-on-surface leading-none">2,450</span>
+<span class="font-headline-sm text-headline-sm text-primary-container uppercase">kcal</span>
+</div>
+<p class="font-label-mono text-label-mono text-secondary mt-1 uppercase">Goal: 2,800 kcal • 87%</p>
+</div>
+<!-- Mini Radial Arc SVG -->
+<div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 48 48">
+<circle class="text-surface-container-highest" cx="24" cy="24" fill="none" r="20" stroke="currentColor" stroke-width="4.5"></circle>
+<circle class="text-primary-container" cx="24" cy="24" fill="none" r="20" stroke="currentColor" stroke-dasharray="125.6" stroke-dashoffset="15.7" stroke-linecap="round" stroke-width="4.5"></circle>
+</svg>
+<span class="absolute font-label-mono text-[10px] font-bold text-on-surface">87%</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-mono text-label-mono text-secondary uppercase pt-space-xs bg-surface-container px-space-xs py-1">
+<span>Active: 1,820 kcal</span>
+<span class="text-primary-container">BMR: 630</span>
+</div>
+</div>
+<!-- Card 3: Intensity Minutes -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Intensity Zone (Z3-Z5)</span>
+<span class="px-1.5 py-0.5 bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase">Goal Smashed</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-on-surface leading-none">64</span>
+<span class="font-headline-sm text-headline-sm text-primary-container uppercase">MIN</span>
+</div>
+<p class="font-label-mono text-label-mono text-secondary mt-1">142% OF DAILY 45 MIN BENCHMARK</p>
+</div>
+<div class="flex items-center gap-1.5 pt-space-xs">
+<span class="h-2 flex-1 bg-primary-container"></span>
+<span class="h-2 flex-1 bg-primary-container"></span>
+<span class="h-2 flex-1 bg-primary-container"></span>
+<span class="h-2 flex-1 bg-tertiary-container"></span>
+<span class="h-2 flex-1 bg-surface-container-highest"></span>
+</div>
+</div>
+<!-- Card 4: Current Weight -->
+<div class="bg-surface-container-low p-space-md flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Body Mass Telemetry</span>
+<span class="material-symbols-outlined text-secondary text-xl">scale</span>
+</div>
+<div class="my-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-on-surface leading-none">72.4</span>
+<span class="font-headline-sm text-headline-sm text-secondary uppercase">kg</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-mono text-label-mono text-primary flex items-center">
+<span class="material-symbols-outlined text-sm">arrow_downward</span> -3.8 kg
+            </span>
+<span class="font-label-mono text-label-mono text-secondary uppercase">Total Meso Deficit</span>
+</div>
+</div>
+<div class="flex justify-between items-center font-label-mono text-label-mono text-secondary uppercase pt-space-xs bg-surface-container px-space-xs py-1">
+<span>Target: 70.0 kg</span>
+<span class="text-on-surface">2.4 kg to goal</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Core Visualization Hub (2 Columns) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Left Column: Tri-Ring Bio-Strain Progress & Pulse (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-lg flex flex-col justify-between gap-space-lg relative">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Exertion Architecture</span>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface">Tri-Ring Bio-Strain</h3>
+</div>
+<span class="px-space-xs py-0.5 bg-surface-container font-label-mono text-label-mono uppercase text-secondary">Live Sensor</span>
+</div>
+<!-- Concentric Radial Rings Data Viz -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-lg my-space-xs">
+<div class="relative w-52 h-52 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 160 160">
+<!-- Outer Ring: Calories (88%) -->
+<circle class="text-surface-container-highest" cx="80" cy="80" fill="none" r="70" stroke="currentColor" stroke-width="9"></circle>
+<circle class="text-primary-container" cx="80" cy="80" fill="none" r="70" stroke="currentColor" stroke-dasharray="439.8" stroke-dashoffset="52.7" stroke-linecap="butt" stroke-width="9"></circle>
+<!-- Middle Ring: Steps (78%) -->
+<circle class="text-surface-container-highest" cx="80" cy="80" fill="none" r="54" stroke="currentColor" stroke-width="9"></circle>
+<circle class="text-on-surface" cx="80" cy="80" fill="none" r="54" stroke="currentColor" stroke-dasharray="339.29" stroke-dashoffset="74.6" stroke-linecap="butt" stroke-width="9"></circle>
+<!-- Inner Ring: Hydration (65%) -->
+<circle class="text-surface-container-highest" cx="80" cy="80" fill="none" r="38" stroke="currentColor" stroke-width="9"></circle>
+<circle class="text-secondary" cx="80" cy="80" fill="none" r="38" stroke="currentColor" stroke-dasharray="238.76" stroke-dashoffset="83.5" stroke-linecap="butt" stroke-width="9"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-label-mono text-label-mono uppercase text-secondary">Aggregate</span>
+<span class="font-metric-md text-metric-md text-on-surface leading-tight">85%</span>
+<span class="font-label-caps text-label-caps uppercase text-primary-container">Strain</span>
+</div>
+</div>
+<!-- Ring Legend -->
+<div class="flex flex-col gap-space-sm w-full sm:w-auto">
+<div class="flex items-center gap-space-sm bg-surface-container p-space-xs pr-space-md">
+<span class="w-3 h-3 bg-primary-container shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-mono text-[10px] text-secondary uppercase">Burn</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">2,450 KCAL (88%)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container p-space-xs pr-space-md">
+<span class="w-3 h-3 bg-on-surface shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-mono text-[10px] text-secondary uppercase">Steps</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">9,420 (78%)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container p-space-xs pr-space-md">
+<span class="w-3 h-3 bg-secondary shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-mono text-[10px] text-secondary uppercase">Water</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">2.8L (65%)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Heart Rate Real-Time Telemetry Box -->
+<div class="bg-surface-container p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-lg animate-pulse">favorite</span>
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface">Heart Rate Telemetry</span>
+</div>
+<div class="flex items-center gap-space-md font-label-mono text-label-mono uppercase">
+<span class="text-secondary">Rest: <strong class="text-on-surface">62 BPM</strong></span>
+<span class="text-primary-container">Peak: <strong class="text-on-primary-container bg-primary-container px-1">142 BPM</strong></span>
+</div>
+</div>
+<!-- ECG Pulse Waveform SVG -->
+<div class="w-full h-14 bg-surface-container-lowest flex items-center px-1 overflow-hidden">
+<svg class="w-full h-full text-primary-container" preserveaspectratio="none" viewbox="0 0 500 60">
+<path d="M0,30 L60,30 L75,10 L85,50 L95,20 L105,38 L115,30 L180,30 L195,5 L205,55 L215,25 L225,30 L300,30 L315,12 L325,48 L335,22 L345,35 L355,30 L430,30 L445,4 L455,56 L465,24 L475,30 L500,30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Right Column: Weekly Volume & Strain Load Chart (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-low p-space-lg flex flex-col justify-between gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary">Macro Progression</span>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface">Weekly Strain &amp; Volume Load</h3>
+</div>
+<!-- Switchable Filter Pills -->
+<div class="inline-flex bg-surface-container-lowest p-1" id="chart-filter-group">
+<button class="chart-tab px-space-sm py-1 font-label-caps text-label-caps uppercase bg-primary-container text-on-primary-container" type="button">Volume</button>
+<button class="chart-tab px-space-sm py-1 font-label-caps text-label-caps uppercase text-secondary hover:text-on-surface" type="button">Calories</button>
+<button class="chart-tab px-space-sm py-1 font-label-caps text-label-caps uppercase text-secondary hover:text-on-surface" type="button">Cardio Strain</button>
+</div>
+</div>
+<!-- High-Contrast Segmented Bar Chart -->
+<div class="flex flex-col gap-space-sm py-space-sm">
+<div class="flex items-center justify-between font-label-mono text-label-mono text-secondary uppercase">
+<span>Peak Target: 14,000 Volume Index</span>
+<span class="text-primary-container font-bold">10,000 Baseline Threshold</span>
+</div>
+<!-- 7-Day Chart Area -->
+<div class="relative w-full h-56 bg-surface-container-lowest p-space-md flex items-end justify-between gap-2 sm:gap-4 overflow-hidden">
+<!-- 10k Baseline Guide Line -->
+<div class="absolute left-0 right-0 top-[35%] h-[1px] bg-primary-container/40 z-0">
+<span class="absolute right-2 -top-3.5 font-label-mono text-[9px] uppercase text-primary-container">Threshold Baseline</span>
+</div>
+<!-- Mon -->
+<div class="flex-1 flex flex-col items-center h-full justify-end z-10 group cursor-pointer">
+<span class="font-label-mono text-[10px] text-secondary opacity-0 group-hover:opacity-100 mb-1 transition-opacity">8.2k</span>
+<div class="w-full bg-surface-container-highest group-hover:bg-surface-bright transition-colors" style="height: 58%;"></div>
+<span class="font-label-caps text-label-caps uppercase text-secondary mt-2">Mon</span>
+</div>
+<!-- Tue -->
+<div class="flex-1 flex flex-col items-center h-full justify-end z-10 group cursor-pointer">
+<span class="font-label-mono text-[10px] text-secondary opacity-0 group-hover:opacity-100 mb-1 transition-opacity">11.4k</span>
+<div class="w-full bg-surface-container-highest group-hover:bg-surface-bright transition-colors" style="height: 78%;"></div>
+<span class="font-label-caps text-label-caps uppercase text-secondary mt-2">Tue</span>
+</div>
+<!-- Wed -->
+<div class="flex-1 flex flex-col items-center h-full justify-end z-10 group cursor-pointer">
+<span class="font-label-mono text-[10px] text-secondary opacity-0 group-hover:opacity-100 mb-1 transition-opacity">10.1k</span>
+<div class="w-full bg-surface-container-highest group-hover:bg-surface-bright transition-colors" style="height: 68%;"></div>
+<span class="font-label-caps text-label-caps uppercase text-secondary mt-2">Wed</span>
+</div>
+<!-- Thu (Today - Highlighted in Pure Crimson) -->
+<div class="flex-1 flex flex-col items-center h-full justify-end z-10 group cursor-pointer relative">
+<span class="font-label-mono text-[11px] font-bold text-primary-container mb-1">13.2k</span>
+<div class="w-full bg-primary-container shadow-[0_0_15px_rgba(225,6,0,0.5)] transition-all" style="height: 92%;"></div>
+<span class="font-label-caps text-label-caps uppercase text-on-surface font-bold mt-2">Today</span>
+</div>
+<!-- Fri -->
+<div class="flex-1 flex flex-col items-center h-full justify-end z-10 group cursor-pointer">
+<span class="font-label-mono text-[10px] text-secondary opacity-0 group-hover:opacity-100 mb-1 transition-opacity">Proj</span>
+<div class="w-full bg-surface-container-highest/60 group-hover:bg-surface-bright transition-colors" style="height: 60%;"></div>
+<span class="font-label-caps text-label-caps uppercase text-secondary mt-2">Fri</span>
+</div>
+<!-- Sat -->
+<div class="flex-1 flex flex-col items-center h-full justify-end z-10 group cursor-pointer">
+<span class="font-label-mono text-[10px] text-secondary opacity-0 group-hover:opacity-100 mb-1 transition-opacity">Rest</span>
+<div class="w-full bg-surface-container-highest/40 group-hover:bg-surface-bright transition-colors" style="height: 30%;"></div>
+<span class="font-label-caps text-label-caps uppercase text-secondary mt-2">Sat</span>
+</div>
+<!-- Sun -->
+<div class="flex-1 flex flex-col items-center h-full justify-end z-10 group cursor-pointer">
+<span class="font-label-mono text-[10px] text-secondary opacity-0 group-hover:opacity-100 mb-1 transition-opacity">Heavy</span>
+<div class="w-full bg-surface-container-highest/50 group-hover:bg-surface-bright transition-colors" style="height: 82%;"></div>
+<span class="font-label-caps text-label-caps uppercase text-secondary mt-2">Sun</span>
+</div>
+</div>
+</div>
+<!-- Weekly Summary Metadata Footprint -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="bg-surface-container p-space-xs text-center">
+<span class="font-label-mono text-label-mono text-secondary uppercase block">7-Day Avg</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase">10,840 VOL</span>
+</div>
+<div class="bg-surface-container p-space-xs text-center">
+<span class="font-label-mono text-label-mono text-secondary uppercase block">Net Progressive</span>
+<span class="font-headline-sm text-headline-sm text-primary uppercase">+6.4% LOAD</span>
+</div>
+<div class="bg-surface-container p-space-xs text-center">
+<span class="font-label-mono text-label-mono text-secondary uppercase block">Recovery Score</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase">OPTIMAL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Bottom Split Section (Power Program & Nutrition Telemetry) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-lg">
+<!-- Left: Today's Power Program (6 Cols) -->
+<div class="lg:col-span-6 bg-surface-container-low p-space-lg flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Scheduled Prescribed Session</span>
+<span class="px-space-xs py-0.5 bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase">High Intensity</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface leading-tight">Heavy Legs &amp; Core Blast</h2>
+<div class="flex items-center gap-space-md font-label-mono text-label-mono text-secondary uppercase">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary">schedule</span> 45 MIN</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-primary-container">local_fire_department</span> 480 KCAL EST.</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-secondary">fitness_center</span> 5 CORE EXERCISES</span>
+</div>
+</div>
+<!-- Exercise Routine Snapshot Block -->
+<div class="flex flex-col gap-space-xs bg-surface-container p-space-md">
+<div class="flex items-center justify-between text-body-sm text-on-surface py-1">
+<span class="font-bold uppercase tracking-wider">1. Barbell Deadlift (RPT)</span>
+<span class="font-label-mono text-label-mono text-secondary">5 SETS • 140 KG • RPE 9</span>
+</div>
+<div class="w-full bg-surface-container-highest h-[1px]"></div>
+<div class="flex items-center justify-between text-body-sm text-on-surface py-1">
+<span class="font-bold uppercase tracking-wider">2. Safety Bar Squats</span>
+<span class="font-label-mono text-label-mono text-secondary">4 SETS • 110 KG • RPE 8.5</span>
+</div>
+<div class="w-full bg-surface-container-highest h-[1px]"></div>
+<div class="flex items-center justify-between text-body-sm text-on-surface py-1">
+<span class="font-bold uppercase tracking-wider">3. Bulgarian Split Squats</span>
+<span class="font-label-mono text-label-mono text-secondary">3 SETS • 32 KG DBs • RPE 8</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-md pt-space-xs">
+<button class="flex-1 py-space-sm bg-primary-container hover:bg-tertiary-container text-on-primary-container font-headline-sm text-headline-sm uppercase text-center transition-all duration-150 active:scale-95 shadow-[0_0_20px_rgba(225,6,0,0.3)]" type="button">
+            Start Session Now
+          </button>
+<button class="px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface font-headline-sm text-headline-sm uppercase transition-colors" type="button">
+            Swap Routine
+          </button>
+</div>
+</div>
+<!-- Right: Nutrition & Recovery Telemetry (6 Cols) -->
+<div class="lg:col-span-6 bg-surface-container-low p-space-lg flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary">Fuel Allocation</span>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface">Nutrition &amp; Recovery Telemetry</h3>
+</div>
+<span class="font-label-mono text-label-mono text-primary uppercase">Day Target: 2,800 KCAL</span>
+</div>
+<!-- Macro Split Bars -->
+<div class="flex flex-col gap-space-sm">
+<!-- Protein -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-mono text-body-sm">
+<span class="text-on-surface uppercase font-bold">Protein</span>
+<span class="text-secondary"><strong class="text-primary font-bold">165g</strong> / 180g (92%)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2.5">
+<div class="bg-primary-container h-full" style="width: 92%;"></div>
+</div>
+</div>
+<!-- Carbs -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-mono text-body-sm">
+<span class="text-on-surface uppercase font-bold">Carbohydrates</span>
+<span class="text-secondary"><strong class="text-on-surface font-bold">210g</strong> / 240g (87%)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2.5">
+<div class="bg-on-surface h-full" style="width: 87.5%;"></div>
+</div>
+</div>
+<!-- Fats -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-mono text-body-sm">
+<span class="text-on-surface uppercase font-bold">Dietary Fats</span>
+<span class="text-secondary"><strong class="text-secondary font-bold">55g</strong> / 65g (84%)</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2.5">
+<div class="bg-secondary h-full" style="width: 84.6%;"></div>
+</div>
+</div>
+</div>
+<!-- Water Gauge Telemetry Module -->
+<div class="bg-surface-container p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 bg-surface-container-lowest flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-2xl">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Hydration Reservoir</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-surface leading-none" id="water-current-val">2.8</span>
+<span class="font-headline-sm text-headline-sm text-secondary uppercase">/ 3.5 Liters</span>
+</div>
+</div>
+</div>
+<button class="px-space-md py-space-sm bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-sm text-headline-sm uppercase transition-all duration-150 active:scale-95 flex items-center justify-center gap-1" id="quick-water-btn" type="button">
+<span class="material-symbols-outlined text-base text-primary">add</span>
+<span>+500ml Water</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for chart filter pill activation
+  document.querySelectorAll('#chart-filter-group .chart-tab').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('#chart-filter-group .chart-tab').forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        btn.classList.add('text-secondary');
+      });
+      button.classList.add('bg-primary-container', 'text-on-primary-container');
+      button.classList.remove('text-secondary');
+    });
+  });
+
+  // Quick hydration logging incrementer
+  const waterBtn = document.getElementById('quick-water-btn');
+  const waterDisplay = document.getElementById('water-current-val');
+  if (waterBtn && waterDisplay) {
+    waterBtn.addEventListener('click', () => {
+      let currentVal = parseFloat(waterDisplay.textContent);
+      if (currentVal < 5.0) {
+        currentVal = (currentVal + 0.5).toFixed(1);
+        waterDisplay.textContent = currentVal;
+      }
+    });
+  }
+</script></main></div><div class="fixed bottom-space-lg right-space-lg z-50 flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-caps text-label-caps uppercase text-on-surface">Ask FitTrack AI</span></div><button class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_1px_8px_rgba(0,0,0,0.04)] hover:brightness-110 active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-2xl">smart_toy</span></button></div></body></html>

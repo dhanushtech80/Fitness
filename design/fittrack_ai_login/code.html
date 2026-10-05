@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>FitTrack AI Login</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@300;400;500;600;700;800&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#E10600',
+              redHover: '#B80500',
+              black: '#000000',
+              dark: '#0A0A0A',
+              card: '#141414',
+              cardHover: '#1A1A1A',
+              border: '#262626',
+              borderRed: '#E10600',
+            }
+          },
+          fontFamily: {
+            headline: ['Oswald', 'Bebas Neue', 'sans-serif'],
+            display: ['Bebas Neue', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #000000;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    .font-headline {
+      font-family: 'Oswald', 'Bebas Neue', sans-serif;
+      letter-spacing: 0.03em;
+    }
+    .font-display {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-black text-white flex flex-col justify-between selection:bg-brand-red selection:text-white">
+<!-- Main Container -->
+<div class="min-h-screen w-full flex flex-col lg:flex-row relative">
+<!-- LEFT SIDE: Dramatic Black Hero -->
+<div class="relative w-full lg:w-7/12 min-h-[520px] lg:min-h-screen bg-black overflow-hidden flex flex-col justify-between p-8 sm:p-12 lg:p-16 border-b lg:border-b-0 lg:border-r border-neutral-900">
+<!-- Background Silhouette Athlete Image with Heavy Vignette Overlay -->
+<div class="absolute inset-0 z-0"><img alt="Elite Athlete Training Silhouette" class="w-full h-full object-cover object-center filter contrast-125 brightness-100 opacity-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7jA_-sffqHpmW3EOYXIsPP69ha0cTLncZvnAIkcdai-avWG8UKOXY5PUoxVi82n5kIVKR1rcU6KUR7j87ULped1sO2Ha9y0TemnaE21y6iVSn9tGa6Vydgq7Gw0_zSEYOJijLFYRr9lojteyQYZh7js4WxKMdO6sp7bAEQEDc9PQJhWfanS086DAFfVJD2e8ihMgPMTcor1gzKj1IPjKENwZwstnNpu7wQdhxmUdckVCJmQT0337aW1o1ZnwW_3IOwA"><div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/30"></div><div class="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/40"></div><div class="absolute top-1/3 left-1/4 w-96 h-96 bg-brand-red/10 rounded-full blur-[130px] pointer-events-none"></div></div>
+<!-- Top Header / Brand Logo Lockup -->
+<div class="relative z-10 flex items-center justify-between">
+<div class="flex items-center gap-3.5 group cursor-pointer">
+<div class="w-11 h-11 rounded bg-black border border-brand-red/40 flex items-center justify-center p-1.5 shadow-[0_0_20px_rgba(225,6,0,0.35)]">
+<img alt="FitTrack AI Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V_JQqCzTnOWxWNp_By1x4GfABKhnOi7yXJ7QQbh9VS1nfjaj3JLDj-pO_4C2Bnz7KtMBq7ckAQMTBns70s4QX3HGs1PC68ZaKMPvMi8favM6jlzMrlYioL4NSyzv7lfcEkMons0RnwysaapRqNEgTpCwKbP_vcP34DvdJKxoUe2TWNprGH5DdFphO9q8YmeviQIIF7-2BJdzrrK5kUoZwOwiq4mQBN6SAm7n0g3n_tcCL-RThKYXOwQdc">
+</div>
+<div>
+<div class="font-headline font-bold text-2xl tracking-wider text-white flex items-center gap-1.5">
+              FITTRACK <span class="text-brand-red">AI</span>
+</div>
+<div class="text-[10px] uppercase font-bold tracking-[0.2em] text-neutral-400">
+              Better Health. Smarter Tracking.
+            </div>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-full bg-neutral-900/80 border border-neutral-800 text-neutral-300 backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
+<span class="">TELEMETRY V4.2</span>
+</div>
+</div>
+<!-- Hero Center/Bottom Messaging -->
+<div class="relative z-10 max-w-xl my-auto py-12 lg:py-0"><div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-black/60 backdrop-blur-md border border-brand-red/40 text-brand-red text-xs font-bold uppercase tracking-widest mb-6 shadow-lg"><span class="w-1.5 h-1.5 rounded-full bg-brand-red"></span>Next-Gen Biometric Performance</div><h1 class="font-headline font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl uppercase tracking-tight leading-[0.92] text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">BETTER HEALTH.<br><span class="text-brand-red inline-block drop-shadow-[0_0_35px_rgba(225,6,0,0.55)]">SMARTER</span> TRACKING.</h1><p class="mt-6 text-base sm:text-lg text-neutral-200 font-normal leading-relaxed max-w-lg drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] bg-black/30 p-2 rounded backdrop-blur-sm">Unleash elite human analytics. Sync high-fidelity biometric telemetry, AI workout programming, and dynamic metabolic targets in real time.</p><div class="mt-10 grid grid-cols-3 gap-4 border-t border-neutral-800/80 pt-6 bg-black/40 p-4 rounded-lg backdrop-blur-sm"><div><div class="font-headline text-3xl sm:text-4xl font-bold text-white tracking-wide">48,500<span class="text-xs text-brand-red font-sans font-bold ml-1">KG</span></div><div class="text-[11px] uppercase tracking-wider text-neutral-400 font-semibold mt-0.5">Weekly Volume</div></div><div><div class="font-headline text-3xl sm:text-4xl font-bold text-white tracking-wide">96<span class="text-brand-red">%</span></div><div class="text-[11px] uppercase tracking-wider text-neutral-400 font-semibold mt-0.5">Readiness Score</div></div><div><div class="font-headline text-3xl sm:text-4xl font-bold text-white tracking-wide">24<span class="text-xs text-brand-red font-sans font-bold ml-1">/7</span></div><div class="text-[11px] uppercase tracking-wider text-neutral-400 font-semibold mt-0.5">AI Neural Coach</div></div></div></div>
+<!-- Left Bottom Status / Credentials -->
+<div class="relative z-10 hidden lg:flex items-center justify-between text-xs text-neutral-500 pt-6 border-t border-neutral-900">
+<div class="">© 2025 FitTrack AI Inc. All rights reserved.</div>
+<div class="flex items-center gap-4">
+<span class="hover:text-neutral-300 cursor-pointer transition">Biometric Security Standard</span>
+<span class="">•</span>
+<span class="hover:text-neutral-300 cursor-pointer transition">256-Bit Vault Encrypted</span>
+</div>
+</div>
+</div>
+<!-- RIGHT SIDE: High-Contrast Auth Card & Login Interface -->
+<div class="w-full lg:w-5/12 bg-black flex flex-col justify-center items-center px-6 sm:px-12 lg:px-14 xl:px-20 py-12 lg:py-16 relative">
+<!-- Subtle top decorative accent bar -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-brand-red to-transparent opacity-60"></div>
+<div class="w-full max-w-md">
+<!-- Header of Card -->
+<div class="mb-8">
+<div class="flex items-center gap-2 mb-3">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-neutral-900 text-neutral-300 border border-neutral-800">
+              ATHLETE ACCESS PORTAL
+            </span>
+</div>
+<h2 class="font-headline font-bold text-4xl sm:text-5xl uppercase tracking-tight text-white">
+            WELCOME <span class="text-brand-red">BACK</span>
+</h2>
+<p class="text-sm text-neutral-400 mt-2 font-normal">
+            Enter your credentials to access your telemetry and active protocol.
+          </p>
+</div>
+<!-- Quick 1-Click Athletes Switcher (Pro Demo Touch) -->
+<div class="mb-6 p-3 rounded-lg bg-neutral-950 border border-neutral-900 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full overflow-hidden border border-brand-red/60 relative">
+<img alt="Sarah Vance" class="w-full h-full object-cover" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<div>
+<div class="text-xs font-bold text-white flex items-center gap-1.5">
+                SARAH VANCE <span class="text-[9px] bg-brand-red/20 text-brand-red px-1.5 py-0.2 rounded font-mono font-bold">PRO ATHLETE</span>
+</div>
+<div class="text-[11px] text-neutral-400 font-mono">sarah.vance@fittrack.ai</div>
+</div>
+</div>
+<button class="text-[11px] text-brand-red font-semibold hover:underline uppercase tracking-wider" type="button">
+            Quick Fill
+          </button>
+</div>
+<!-- Login Form Card -->
+<form class="space-y-5" onsubmit="event.preventDefault();">
+<!-- Email Field -->
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-300 mb-2" for="email">
+              Email Address / Athlete ID
+            </label>
+<div class="relative group">
+<input class="w-full px-4 py-3.5 bg-[#141414] border border-neutral-800 rounded text-white placeholder-neutral-500 text-sm font-medium focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all duration-200" id="email" name="email" placeholder="athlete@domain.com" required="" type="email" value="sarah.vance@fittrack.ai">
+<div class="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-500">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.206" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Password Field -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<label class="block text-xs font-bold uppercase tracking-wider text-neutral-300" for="password">
+                Password
+              </label>
+<a class="text-xs font-semibold text-neutral-400 hover:text-brand-red transition-colors duration-150" href="#forgot">
+                Forgot password?
+              </a>
+</div>
+<div class="relative group">
+<input class="w-full px-4 py-3.5 bg-[#141414] border border-neutral-800 rounded text-white placeholder-neutral-500 text-sm font-medium focus:outline-none focus:border-brand-red focus:ring-1 focus:ring-brand-red transition-all duration-200" id="password" name="password" placeholder="Enter password" required="" type="password" value="••••••••••••">
+<button class="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-500 hover:text-neutral-300 transition" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Keep me signed in & Security Level -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input checked="" class="w-4 h-4 rounded border-neutral-800 bg-[#141414] text-brand-red focus:ring-0 focus:ring-offset-0 accent-brand-red cursor-pointer" type="checkbox">
+<span class="text-xs text-neutral-400 group-hover:text-neutral-300 transition select-none">Remember telemetry session</span>
+</label>
+<span class="text-[11px] font-mono text-neutral-500">2FA ENABLED</span>
+</div>
+<!-- Primary Red Submit Button -->
+<div class="pt-2">
+<button class="w-full py-4 px-6 bg-brand-red hover:bg-brand-redHover active:scale-[0.99] text-white font-headline text-2xl font-bold uppercase tracking-wider rounded transition-all duration-200 shadow-[0_4px_25px_rgba(225,6,0,0.4)] flex items-center justify-center gap-3 group" type="submit">
+<span class="">LOGIN</span>
+<svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</button>
+</div>
+<!-- Divider -->
+<div class="relative py-2 flex items-center justify-center">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-neutral-900"></div></div>
+<span class="relative px-3 bg-black text-[11px] font-bold uppercase tracking-widest text-neutral-600">OR CONNECT WITH WEARABLE</span>
+</div>
+<!-- Fast SSO Sync Buttons -->
+<div class="grid grid-cols-2 gap-3">
+<button class="py-2.5 px-4 bg-[#141414] hover:bg-[#1C1C1C] border border-neutral-800 hover:border-neutral-700 text-xs font-semibold text-neutral-300 rounded flex items-center justify-center gap-2 transition" type="button">
+<svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24">
+<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.87-0.91.04-2.02.61-2.67 1.37-.58.67-1.08 1.74-0.94 2.78 1.02.08 2.08-.53 2.69-1.28z"></path>
+</svg>
+<span class="">Apple Health</span>
+</button>
+<button class="py-2.5 px-4 bg-[#141414] hover:bg-[#1C1C1C] border border-neutral-800 hover:border-neutral-700 text-xs font-semibold text-neutral-300 rounded flex items-center justify-center gap-2 transition" type="button">
+<svg class="w-4 h-4 fill-current text-brand-red" viewBox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"></path>
+</svg>
+<span class="">Garmin Connect</span>
+</button>
+</div>
+</form>
+<!-- Bottom Sign Up Link -->
+<div class="mt-8 text-center pt-6 border-t border-neutral-900">
+<p class="text-sm text-neutral-400">
+            Don't have an athlete account? 
+            <a class="text-white hover:text-brand-red font-bold uppercase tracking-wider ml-1 transition-colors duration-150 inline-flex items-center gap-1" href="#signup">
+              Create account
+              <span class="text-brand-red">→</span>
+</a>
+</p>
+</div>
+</div>
+<!-- Footer Help info -->
+<div class="mt-8 lg:mt-12 text-center text-xs text-neutral-600">
+        Need assistance? Contact <a class="text-neutral-400 hover:underline" href="#">FitTrack Performance Support</a>
+</div>
+</div>
+</div>
+<!-- GLOBAL FIXED COMPONENT: Floating Red AI Chatbot Button (Bottom-Right) -->
+<aside aria-label="AI Coach Assistant" class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+<!-- Tooltip badge -->
+<div class="hidden sm:flex items-center gap-2 bg-neutral-900/95 text-white border border-neutral-800 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-2xl backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-brand-red animate-ping"></span>
+<span class="text-neutral-200">Ask FitTrack AI</span>
+</div>
+<!-- Floating Circular Red Button -->
+<button aria-label="Open FitTrack AI Assistant" class="w-14 h-14 rounded-full bg-brand-red hover:bg-brand-redHover active:scale-95 text-white shadow-[0_0_30px_rgba(225,6,0,0.6)] flex items-center justify-center transition-all duration-200 group relative border-2 border-white/20" type="button">
+<!-- Sparkle/Robot Icon -->
+<svg class="w-6 h-6 text-white group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewBox="0 0 24 24">
+<rect height="10" rx="2" width="18" x="3" y="11"></rect>
+<circle cx="12" cy="5" r="2"></circle>
+<path d="M12 7v4"></path>
+<line x1="8" x2="8" y1="16" y2="16"></line>
+<line x1="16" x2="16" y1="16" y2="16"></line>
+</svg>
+<!-- Red ping pulse indicator -->
+<span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-brand-red rounded-full border-2 border-black flex items-center justify-center">
+<span class="w-1.5 h-1.5 bg-white rounded-full"></span>
+</span>
+</button>
+</aside>
+
+
+
+
+</body></html>

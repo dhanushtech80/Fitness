@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-[#000000] text-white">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitTrack AI - Reset Password</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#E10600',
+              redHover: '#B30500',
+              darkBg: '#000000',
+              cardBg: '#12131A',
+              cardInner: '#1A1B24',
+              borderDark: '#262732',
+              borderRed: 'rgba(225, 6, 0, 0.4)'
+            }
+          },
+          fontFamily: {
+            headline: ['Oswald', 'Bebas Neue', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glow-red {
+      box-shadow: 0 0 24px rgba(225, 6, 0, 0.25);
+    }
+    .text-glow-red {
+      text-shadow: 0 0 16px rgba(225, 6, 0, 0.6);
+    }
+    .custom-gradient-bg {
+      background: radial-gradient(circle at 50% 20%, rgba(225, 6, 0, 0.08) 0%, rgba(0, 0, 0, 0) 70%), #000000;
+    }
+  </style>
+</head>
+<body class="h-full font-body antialiased custom-gradient-bg flex flex-col justify-between selection:bg-[#E10600] selection:text-white">
+
+  <!-- Top App Bar / Brand Header -->
+  <header class="w-full px-6 py-6 md:px-12 flex items-center justify-between border-b border-[#1A1B22]/80 bg-[#000000]/70 backdrop-blur-md sticky top-0 z-40">
+    <div class="flex items-center gap-3">
+      <img src="https://lh3.googleusercontent.com/aida/AEtjO1V_JQqCzTnOWxWNp_By1x4GfABKhnOi7yXJ7QQbh9VS1nfjaj3JLDj-pO_4C2Bnz7KtMBq7ckAQMTBns70s4QX3HGs1PC68ZaKMPvMi8favM6jlzMrlYioL4NSyzv7lfcEkMons0RnwysaapRqNEgTpCwKbP_vcP34DvdJKxoUe2TWNprGH5DdFphO9q8YmeviQIIF7-2BJdzrrK5kUoZwOwiq4mQBN6SAm7n0g3n_tcCL-RThKYXOwQdc" alt="FitTrack AI Logo" class="w-9 h-9 object-contain rounded-lg border border-[#E10600]/40 p-1 bg-[#0A0A0A]">
+      <div class="leading-none">
+        <div class="flex items-center gap-2">
+          <span class="font-headline tracking-wider text-xl font-bold uppercase text-white">FITTRACK <span class="text-[#E10600]">AI</span></span>
+          <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[10px] font-mono tracking-wider font-semibold bg-[#1C1414] text-[#E10600] border border-[#E10600]/30 uppercase">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#E10600] animate-pulse"></span>
+            Auth Vault
+          </span>
+        </div>
+        <p class="text-[10px] uppercase tracking-widest text-neutral-400 mt-0.5">BETTER HEALTH. SMARTER TRACKING.</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="#" class="text-xs font-semibold text-neutral-400 hover:text-white transition-colors uppercase tracking-wider flex items-center gap-1.5">
+        <svg class="w-4 h-4 text-[#E10600]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        Back to Login
+      </a>
+      <span class="w-px h-4 bg-neutral-800"></span>
+      <span class="text-[11px] font-mono text-neutral-500 uppercase">ENCRYPT: 256-BIT SHA</span>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-1 flex items-center justify-center px-4 py-10 md:py-16">
+    <div class="w-full max-w-4xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+
+      <!-- CARD STATE 1: Request Reset Link -->
+      <section class="bg-[#12131A] border border-[#262732] rounded-2xl p-7 md:p-9 shadow-2xl relative overflow-hidden transition-all duration-300 hover:border-[#E10600]/50">
+        <!-- Top accent line -->
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#E10600] to-transparent"></div>
+        
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-[10px] font-mono tracking-widest uppercase bg-[#1D1E28] px-2.5 py-1 rounded text-neutral-300 border border-neutral-700">
+            PHASE 01 // IDENTITY VERIFY
+          </span>
+          <span class="text-xs font-semibold text-[#E10600] flex items-center gap-1">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+            RECOVERY STAGE
+          </span>
+        </div>
+
+        <h1 class="font-headline text-3xl md:text-4xl font-bold uppercase tracking-wide text-white leading-tight">
+          RESET <span class="text-[#E10600] text-glow-red">PASSWORD</span>
+        </h1>
+        <p class="text-xs md:text-sm text-neutral-400 mt-2 mb-6 leading-relaxed">
+          Enter your registered Athlete ID or email address. We will dispatch a single-use biometric verification link valid for 15 minutes.
+        </p>
+
+        <form class="space-y-5" onsubmit="event.preventDefault();">
+          <div>
+            <label class="block text-[11px] font-mono uppercase tracking-wider text-neutral-300 mb-2">
+              Athlete Email / ID
+            </label>
+            <div class="relative">
+              <input 
+                type="email" 
+                value="athlete@fittrack.ai" 
+                placeholder="name@fittrack.ai"
+                class="w-full bg-[#181922] border border-[#2D2E3C] focus:border-[#E10600] focus:ring-1 focus:ring-[#E10600] rounded-lg px-4 py-3.5 text-sm text-white placeholder-neutral-600 outline-none transition font-medium"
+              >
+              <span class="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-500 font-mono text-xs">@</span>
+            </div>
+          </div>
+
+          <button 
+            type="submit" 
+            class="w-full bg-[#E10600] hover:bg-[#B30500] text-white font-headline text-lg uppercase tracking-wider font-bold py-3.5 px-6 rounded-lg transition duration-200 flex items-center justify-center gap-2 shadow-lg shadow-[#E10600]/25 group"
+          >
+            <span>SEND RESET LINK</span>
+            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </button>
+        </form>
+
+        <div class="mt-6 pt-5 border-t border-[#1F202B] flex items-center justify-between text-xs">
+          <a href="#" class="text-neutral-400 hover:text-white transition flex items-center gap-1.5 font-medium">
+            <svg class="w-3.5 h-3.5 text-[#E10600]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12"></path>
+            </svg>
+            Back to athlete login
+          </a>
+          <span class="text-neutral-500 font-mono text-[11px]">TTL: 15 MIN</span>
+        </div>
+      </section>
+
+      <!-- CARD STATE 2: Set New Password (Second State) -->
+      <section class="bg-[#12131A] border border-[#262732] rounded-2xl p-7 md:p-9 shadow-2xl relative overflow-hidden transition-all duration-300 hover:border-[#E10600]/50">
+        <!-- Top accent line -->
+        <div class="absolute top-0 left-0 right-0 h-1 bg-[#E10600]"></div>
+
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-[10px] font-mono tracking-widest uppercase bg-[#1E1414] px-2.5 py-1 rounded text-[#E10600] border border-[#E10600]/30">
+            PHASE 02 // CIPHER RENEWAL
+          </span>
+          <span class="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-400">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            TOKEN VERIFIED
+          </span>
+        </div>
+
+        <h2 class="font-headline text-3xl md:text-4xl font-bold uppercase tracking-wide text-white leading-tight">
+          SET NEW <span class="text-[#E10600] text-glow-red">PASSWORD</span>
+        </h2>
+        <p class="text-xs md:text-sm text-neutral-400 mt-2 mb-6 leading-relaxed">
+          Create a hardened credentials cipher to restore your athlete biometric dashboard access.
+        </p>
+
+        <form class="space-y-4" onsubmit="event.preventDefault();">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <label class="block text-[11px] font-mono uppercase tracking-wider text-neutral-300">
+                New Password
+              </label>
+              <span class="text-[10px] font-mono text-neutral-500">MIN 8 CHARS</span>
+            </div>
+            <div class="relative">
+              <input 
+                type="password" 
+                value="IronAthlete99!" 
+                class="w-full bg-[#181922] border border-[#2D2E3C] focus:border-[#E10600] focus:ring-1 focus:ring-[#E10600] rounded-lg px-4 py-3 text-sm text-white placeholder-neutral-600 outline-none transition font-medium"
+              >
+              <button type="button" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-500 hover:text-white">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              </button>
+            </div>
+            <!-- Security Strength Bar -->
+            <div class="mt-2 flex items-center gap-1.5">
+              <div class="h-1 flex-1 rounded bg-[#E10600]"></div>
+              <div class="h-1 flex-1 rounded bg-[#E10600]"></div>
+              <div class="h-1 flex-1 rounded bg-[#E10600]"></div>
+              <div class="h-1 flex-1 rounded bg-neutral-700"></div>
+              <span class="text-[9px] font-mono text-[#E10600] uppercase font-bold ml-1">STRONG</span>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-mono uppercase tracking-wider text-neutral-300 mb-2">
+              Confirm New Password
+            </label>
+            <div class="relative">
+              <input 
+                type="password" 
+                value="IronAthlete99!" 
+                class="w-full bg-[#181922] border border-[#2D2E3C] focus:border-[#E10600] focus:ring-1 focus:ring-[#E10600] rounded-lg px-4 py-3 text-sm text-white placeholder-neutral-600 outline-none transition font-medium"
+              >
+              <button type="button" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-500 hover:text-white">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="pt-1">
+            <button 
+              type="submit" 
+              class="w-full bg-[#E10600] hover:bg-[#B30500] text-white font-headline text-lg uppercase tracking-wider font-bold py-3.5 px-6 rounded-lg transition duration-200 flex items-center justify-center gap-2 shadow-lg shadow-[#E10600]/25"
+            >
+              <span>CONFIRM &amp; UPDATE CIPHER</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </button>
+          </div>
+        </form>
+
+        <div class="mt-6 pt-5 border-t border-[#1F202B] flex items-center justify-between text-xs">
+          <span class="text-neutral-400">All sessions will be invalidated.</span>
+          <a href="#" class="text-[#E10600] hover:underline font-bold uppercase tracking-wider text-[11px]">Proceed to Login →</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Security Footer Note -->
+  <footer class="w-full py-6 px-6 text-center border-t border-[#1A1B22]/80 bg-[#000000]">
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4 text-[11px] text-neutral-500 uppercase tracking-widest font-mono">
+      <span>© 2025 FitTrack AI Inc. All rights reserved.</span>
+      <span class="hidden md:inline">•</span>
+      <span>Biometric Security Standard V4.2</span>
+      <span class="hidden md:inline">•</span>
+      <span class="text-[#E10600]">256-Bit Telemetry Vault</span>
+    </div>
+  </footer>
+
+  <!-- Global Floating AI Chatbot Button (Required on EVERY page) -->
+  <aside aria-label="FitTrack AI Assistant" class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <!-- Tooltip -->
+    <div class="bg-[#14141A] border border-[#2B2C38] text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-xl flex items-center gap-1.5 backdrop-blur-md">
+      <span class="w-2 h-2 rounded-full bg-[#E10600] animate-ping"></span>
+      <span>Ask FitTrack AI</span>
+    </div>
+
+    <!-- Pulsing Action Button -->
+    <button 
+      type="button"
+      class="w-14 h-14 rounded-full bg-[#E10600] hover:bg-[#B30500] text-white flex items-center justify-center shadow-2xl glow-red hover:scale-105 active:scale-95 transition-all duration-200 relative group"
+      aria-label="Open FitTrack AI Coach"
+    >
+      <div class="absolute -inset-1 rounded-full bg-[#E10600]/30 animate-pulse"></div>
+      <!-- Robot / Spark Icon -->
+      <svg class="w-7 h-7 relative z-10 transition-transform group-hover:rotate-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 01-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L4.2 15.3" />
+        <circle cx="12" cy="9" r="1.5" fill="currentColor"/>
+      </svg>
+    </button>
+  </aside>
+
+</body>
+</html>
